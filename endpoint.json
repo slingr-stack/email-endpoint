@@ -1,0 +1,121 @@
+{
+    "label": "Email",
+    "name": "email",
+    "apiVersion": "v1",
+    "internal": true,
+    "configurationType": "GLOBAL",
+    "deployment": {
+        "profiles":[
+            {
+                "name": "default",
+                "label": "Default",
+                "memory": 256,
+                "description": "Default configuration"
+            }
+        ],
+        "allowMultipleInstances": false
+    },
+    "icon48": "https://storage.googleapis.com/static.slingrs.io/platform/endpoints/email.png",
+    "status": "ACTIVE",
+    "stores": [],
+    "events": [
+        {
+            "label": "Email Received",
+            "name": "inboundEmailReceived",
+            "description": "Happens when a new email is detected."
+        }
+    ],
+    "functions": [],
+    "configuration":[
+        {
+            "name": "type",
+            "label": "Protocol",
+            "description": "Valid values are: 'imap', 'imaps', 'pop3', 'pop3s', or with placeholders ('Custom' option).",
+            "type": "buttonsGroup",
+            "required": true,
+            "defaultValue": "imaps",
+            "typeOptions": {
+                "allowCustom": true,
+                "possibleValues":[
+                    {
+                        "label":"IMAP",
+                        "name":"imap"
+                    },
+                    {
+                        "label":"IMAPS",
+                        "name":"imaps"
+                    },
+                    {
+                        "label":"POP3",
+                        "name":"pop3"
+                    },
+                    {
+                        "label":"POP3S",
+                        "name":"pop3s"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "imapServer",
+            "label": "Server",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "imapPort",
+            "label": "Port",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "imapUser",
+            "label": "User",
+            "description": "If username contains an @, encode it using %40. For example 'user%40gmail.com'",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "imapPassword",
+            "label": "Password",
+            "type": "password",
+            "required": true
+        },
+        {
+            "name": "imapFolder",
+            "label": "Folder To Check",
+            "description": "This is usually 'Inbox', but change it as needed.",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "imapMoveToFolder",
+            "label": "Move To Folder",
+            "description": "Folder to move the read messages. This option is disabled over POP3 and POP3S protocols.",
+            "type": "text",
+            "required": true,
+            "visibility": "!config.type || (config.type != 'pop3' && config.type != 'pop3s')"
+        },
+        {
+            "name": "imapCheckFrequency",
+            "label": "Check Frequency (ms)",
+            "type": "text",
+            "required": true,
+            "typeOptions": {
+                "validation": {
+                    "function": "!config.imapCheckFrequency || utils.isPlaceholder(config.imapCheckFrequency) || utils.getInteger(config.imapCheckFrequency) >= 0",
+                    "message": "It must be a positive integer or a valid placeholder. "
+                }
+            }
+        },
+        {
+            "name": "config",
+            "label": "Configuration",
+            "value": "<ul><li><strong>IMAPS</strong> (IMAP over SSL) is the preferred protocol.</li><li>For Gmail system folders, please use the prefix. For example, [Gmail]/Trash. Custom labels do not need prefix.</li></ul>",
+            "type": "info",
+            "typeOptions": {
+                "alertType": "warning"
+            }
+        }
+    ]
+}

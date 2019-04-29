@@ -1,0 +1,2 @@
+io.slingr.endpoints.email.utils.ToJsonConverter
+io.slingr.endpoints.email.utils.ToStringConverter

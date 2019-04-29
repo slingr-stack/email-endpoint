@@ -1,0 +1,86 @@
+{
+    "attachment": false,
+    "base64": false,
+    "bcc": [
+        {
+            "email": "lefunes+3@slingr.io",
+            "name": "L3"
+        }
+    ],
+    "cc": [
+        {
+            "email": "lefunes+2@slingr.io",
+            "name": "L2"
+        },
+        {
+            "email": "lefunes+4@slingr.io",
+            "name": "L4"
+        }
+    ],
+    "contentType": "multipart/alternative",
+    "date": 1441977608824,
+    "fromEmail": "test.integrations@slingr.io",
+    "fromName": "Test Integrations",
+    "headers": {
+        "Bcc": "L3 <lefunes+3@slingr.io>",
+        "Cc": "L2 <lefunes+2@slingr.io>, L4 <lefunes+4@slingr.io>",
+        "Content-Type": "multipart/alternative; boundary=001a114192261f0ed6051f7830d8",
+        "Date": "Fri, 11 Sep 2015 09:52:27 -0300",
+        "Delivered-To": "test.integrations@slingr.io",
+        "From": "Test Integrations <test.integrations@slingr.io>",
+        "MIME-Version": "1.0",
+        "Message-ID": "<CAB7bu=75dGWu4zb=NUaaJ8o07qemw0BNdJv93QS9T9=_NSnUzg@mail.gmail.com>",
+        "Received": "by 10.28.153.148 with HTTP; Fri, 11 Sep 2015 05:52:27 -0700 (PDT)",
+        "Subject": "Multiple receivers",
+        "To": "Test Integrations <test.integrations@slingr.io>, L0 <lefunes@slingr.io>,\r\n L5 <lefunes+5@slingr.io>"
+    },
+    "html": "<div dir=\"ltr\">Test multiple receiver email</div>\r\n",
+    "originalContentType": "multipart/ALTERNATIVE; boundary=001a114192261f0ed6051f7830d8",
+    "parts": [
+        {
+            "attachment": false,
+            "base64": false,
+            "content": "Test multiple receiver email\r\n",
+            "contentType": "text/plain",
+            "encoding": "7BIT",
+            "headers": {
+                "Content-Type": "text/plain; charset=UTF-8"
+            },
+            "originalContentType": "TEXT/PLAIN; charset=UTF-8",
+            "size": 30,
+            "text": "Test multiple receiver email\r\n"
+        },
+        {
+            "attachment": false,
+            "base64": false,
+            "content": "<div dir=\"ltr\">Test multiple receiver email</div>\r\n",
+            "contentType": "text/html",
+            "encoding": "7BIT",
+            "headers": {
+                "Content-Type": "text/html; charset=UTF-8"
+            },
+            "html": "<div dir=\"ltr\">Test multiple receiver email</div>\r\n",
+            "originalContentType": "TEXT/HTML; charset=UTF-8",
+            "size": 51
+        }
+    ],
+    "size": 881,
+    "subject": "Multiple receivers",
+    "text": "Test multiple receiver email\r\n",
+    "to": [
+        {
+            "email": "test.integrations@slingr.io",
+            "name": "Test Integrations"
+        },
+        {
+            "email": "lefunes@slingr.io",
+            "name": "L0"
+        },
+        {
+            "email": "lefunes+5@slingr.io",
+            "name": "L5"
+        }
+    ],
+    "toEmail": "test.integrations@slingr.io",
+    "toName": "Test Integrations"
+}

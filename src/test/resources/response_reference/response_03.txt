@@ -1,0 +1,24 @@
+{
+    "attachments": [
+        {
+            "base64": false,
+            "content": "TEST FILE TO SIGN\n\nEXAMPLE #1",
+            "contentType": "text/plain",
+            "name": "test_doc_1.txt"
+        }
+    ],
+    "date": 1441979495223,
+    "fromEmail": "lefunes@slingr.io",
+    "fromName": "Luis Enrique Funes",
+    "htmlBody": "<div dir=\"ltr\">sdfsdf</div>\r\n",
+    "subject": "Test 010",
+    "textBody": "sdfsdf\r\n",
+    "to": [
+        {
+            "email": "test.integrations@slingr.io",
+            "name": "Test Integrations"
+        }
+    ],
+    "toEmail": "test.integrations@slingr.io",
+    "toName": "Test Integrations"
+}

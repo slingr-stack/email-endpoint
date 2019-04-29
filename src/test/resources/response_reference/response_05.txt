@@ -1,0 +1,15 @@
+{
+    "date": 1441138582000,
+    "fromEmail": "le.funes@gmail.com",
+    "fromName": "Luis Enrique Funes",
+    "subject": "Test endpoints",
+    "textBody": "asdadas\r\n\r\n-- \r\nLuis Enrique Funes\r\n",
+    "to": [
+        {
+            "email": "test.integrations@slingr.io",
+            "name": "Test Integrations"
+        }
+    ],
+    "toEmail": "test.integrations@slingr.io",
+    "toName": "Test Integrations"
+}

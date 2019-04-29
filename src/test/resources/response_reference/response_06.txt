@@ -1,0 +1,40 @@
+{
+    "bcc": [
+        {
+            "email": "lefunes+3@slingr.io",
+            "name": "L3"
+        }
+    ],
+    "cc": [
+        {
+            "email": "lefunes+2@slingr.io",
+            "name": "L2"
+        },
+        {
+            "email": "lefunes+4@slingr.io",
+            "name": "L4"
+        }
+    ],
+    "date": 1441977608824,
+    "fromEmail": "test.integrations@slingr.io",
+    "fromName": "Test Integrations",
+    "htmlBody": "<div dir=\"ltr\">Test multiple receiver email</div>\r\n",
+    "subject": "Multiple receivers",
+    "textBody": "Test multiple receiver email\r\n",
+    "to": [
+        {
+            "email": "test.integrations@slingr.io",
+            "name": "Test Integrations"
+        },
+        {
+            "email": "lefunes@slingr.io",
+            "name": "L0"
+        },
+        {
+            "email": "lefunes+5@slingr.io",
+            "name": "L5"
+        }
+    ],
+    "toEmail": "test.integrations@slingr.io",
+    "toName": "Test Integrations"
+}

@@ -1,0 +1,16 @@
+{
+    "date": 1441979598623,
+    "fromEmail": "lefunes@slingr.io",
+    "fromName": "Luis Enrique Funes",
+    "htmlBody": "<div dir=\"ltr\">a</div>\r\n",
+    "subject": "test 009",
+    "textBody": "a\r\n",
+    "to": [
+        {
+            "email": "test.integrations@slingr.io",
+            "name": "Test Integrations"
+        }
+    ],
+    "toEmail": "test.integrations@slingr.io",
+    "toName": "Test Integrations"
+}
