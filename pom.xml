@@ -36,7 +36,7 @@
         <project.build.shade.version>2.4.1</project.build.shade.version>
         <!-- Other properties -->
         <build.main-class>io.slingr.endpoints.email.Runner</build.main-class>
-        <camel.version>2.18.3</camel.version>
+        <camel.version>2.24.2</camel.version>
     </properties>
 
     <dependencies>
